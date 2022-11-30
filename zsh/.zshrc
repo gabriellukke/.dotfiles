@@ -129,8 +129,10 @@ alias sai="sudo apt install"
 alias ga="git add"
 alias gcm="git commit -m"
 alias gcane="git commit --amend --no-edit"
-alias gs="git stash"
-alias gsa="git stash apply"
+alias gs="git status"
+alias gl="git log"
+alias gsh="git stash"
+alias gsha="git stash apply"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
