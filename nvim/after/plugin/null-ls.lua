@@ -1,14 +1,20 @@
 local null_ls = require("null-ls")
 
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
+
+local sources = {
+    formatting.prettier.with({
+        extra_args = { "--single-quote", },
+    }),
+    diagnostics.eslint,
+    -- diagnostics.eslint_d,
+    diagnostics.flake8,
+    formatting.black,
+}
+
 null_ls.setup({
-    sources = {
-        null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.eslint,
-        -- null_ls.builtins.diagnostics.eslint_d,
-        null_ls.builtins.formatting.prettier,
-        null_ls.builtins.diagnostics.flake8,
-        null_ls.builtins.formatting.black,
-        null_ls.builtins.completion.spell,
-    },
+  debug = true,
+  sources = sources,
 })
 
