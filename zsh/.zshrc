@@ -15,6 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -79,9 +80,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
 	asdf
+	zsh-syntax-highlighting
+	zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -133,7 +134,41 @@ alias gs="git status"
 alias gl="git log"
 alias gsh="git stash"
 alias gsha="git stash apply"
+alias gr="git restore"
+alias grs="git restore --staged"
+alias gco="git checkout"
+alias gbr="git branch"
+alias gbrd="git branch -d"
+alias gbrD="git branch -D"
+alias grst="git reset"
+
+# npm 
+alias npi="npm install"
+alias npr="npm run"
+alias nps="npm start"
+alias npt="npm test"
+alias nptw="npm test -- --watch"
+alias nptc="npm test -- --coverage"
+alias nptwc="npm test -- --watch --coverage"
+
+# yarn
+alias yni="yarn install"
+alias ynr="yarn run"
+alias yns="yarn start"
+alias ynt="yarn test"
+alias yntw="yarn test --watch"
+alias yntc="yarn test --coverage"
+alias yntwc="yarn test --watch --coverage"
+
+# Lint
+alias el="npx eslint"
+alias elf="npx eslint --fix"
+alias prt="npx prettier --write"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH="/home/gabriellukke/.local/bin:$PATH"
 
