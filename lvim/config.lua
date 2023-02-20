@@ -1,4 +1,4 @@
-require("gabriellukke.set")
+require("gabriellukke")
 --[[
 lvim is the global options object
 
@@ -173,7 +173,8 @@ lvim.plugins = {
   },
   {"christoomey/vim-system-copy"},
   {"wakatime/vim-wakatime"},
-  {"github/copilot.vim"}
+  {"github/copilot.vim"},
+  {"theprimeagen/harpoon"}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
