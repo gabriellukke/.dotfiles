@@ -134,10 +134,20 @@ _G.packer_plugins = {
     path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -184,6 +194,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/gabriellukke/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   }
 }
 
